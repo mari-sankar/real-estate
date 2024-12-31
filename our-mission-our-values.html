@@ -44,60 +44,71 @@
 </head>
 
 <style>
-  .team-container {
-  display: flex;
-  flex-wrap: wrap; /* Enables wrapping to the next line */
-  gap: 20px; /* Adds spacing between cards */
-  padding: 40px;
-  justify-content: left; /* Centers the cards */
-}
-
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .mission-section {
   text-align: center;
-  width: 250px; /* Fixed width for each card */
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px; /* Optional extra margin */
+  padding: 40px 20px;
+  background-color: #fff;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.section-title {
+  font-size: 28px;
+  color: #333;
   margin-bottom: 15px;
 }
 
-.card h3 {
-  font-size: 18px;
-  color: #333;
-  margin: 10px 0;
-}
-
-.card p {
+.mission-text {
   font-size: 16px;
-  color: orange;
-  margin: 10px 0;
-  font-weight: bold;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  text-align: left;
 }
 
-.card button {
-  background-color: transparent;
-  border: 2px solid orange;
-  color: orange;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+/* Values Section */
+.values-section {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.card button:hover {
-  background-color: orange;
-  color: white;
+.section-subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.value-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 25px;
+  width: 275px; /* Fixed width for each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card h4 {
+  font-size: 18px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 </style>
 <body>
 <div class="preloader">
@@ -116,7 +127,7 @@
           <li><a href="index.html">About us</a></li>
           <li><a href="our-story.html">Our Story</a></li>
           <li><a href="leadership.html">Leadership</a></li>
-          <li><a href="our-mission-our-values.html">Our Mission/Our Value</a></li>
+          <li><a href="">Our Mission/Our Value</a></li>
           <li><a href="">Sustainability</a></li>
           <li><a href="">Community Involvement</a></li>
         </ul>
@@ -200,7 +211,7 @@
             <li><a href="index.html">About us</a></li>
             <li><a href="our-story.html">Our Story</a></li>
             <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="our-mission-our-values.html">Our Mission/Our Value</a></li>
+            <li><a href="">Our Mission/Our Value</a></li>
             <li><a href="">Sustainability</a></li>
             <li><a href="">Community Involvement</a></li>
           </ul>
@@ -307,45 +318,49 @@
           <li><a href="index.html">About Us</a></li>
           <li><a href="our-story.html">Our Story</a></li>
           <li class="active"><a href="leadership.html">Leadership</a></li>
-          <li><a href="our-mission-our-values.html">Our Mission/Our Values</a></li>
+          <li><a href="#">Our Mission/Our Values</a></li>
           <li><a href="#">Sustainability</a></li>
           <li><a href="#">Community Involvement</a></li>
         </ul>
       </div>
       <!-- end col-6 -->
       <div class="col-lg-61 wow fadeInUp">
-        <div class="team-container">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Nish Kharod">
-            <h3>NISH KHAROD</h3>
-            <p>VICE PRESIDENT</p>
-            <button>Read More</button>
+        <section class="mission-section">
+          <h2 class="section-title">OUR MISSION</h2>
+          <p class="mission-text">
+            Our mission is to create value for guests, associates, and investors through owning and operating premium-branded hotels nationwide.
+          </p>
+        </section>
+      
+        <section class="values-section">
+          <h3 class="section-subtitle">Our Values</h3>
+          <div class="values-container">
+            <div class="value-card">
+              <h4>OUR PEOPLE</h4>
+              <p>We act in the best interests of our guests, our associates, and our investors.</p>
+            </div>
+            <div class="value-card">
+              <h4>TRANSPARENCY</h4>
+              <p>We communicate openly, directly, and frequently with our investors.</p>
+            </div>
+            <div class="value-card">
+              <h4>ACCOUNTABILITY</h4>
+              <p>We meet commitments and fulfill expectations.</p>
+            </div>
+            <div class="value-card">
+              <h4>QUALITY</h4>
+              <p>We have the highest standards of quality, service, and professionalism.</p>
+            </div>
+            <div class="value-card">
+              <h4>PROFITABILITY</h4>
+              <p>We create value for our investors as a necessary and natural part of our business.</p>
+            </div>
+            <div class="value-card">
+              <h4>COMMUNITY</h4>
+              <p>We are good citizens and give back to our local communities which we serve.</p>
+            </div>
           </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Ken Pansuria">
-            <h3>KEN PANSURIA</h3>
-            <p>PRESIDENT</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
-        </div>
+        </section>
         <!-- end content-box --> 
       </div>
       <!-- edn col-6 --> 
