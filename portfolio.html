@@ -42,62 +42,89 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
-
 <style>
-  .team-container {
+  .portfolio {
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio h1 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.filter-bar {
   display: flex;
-  flex-wrap: wrap; /* Enables wrapping to the next line */
-  gap: 20px; /* Adds spacing between cards */
-  padding: 40px;
-  justify-content: left; /* Centers the cards */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-bar button {
+  background: transparent;
+  border: 1px solid #999;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-bar button:hover {
+  background-color: #dcdcdc;
+}
+
+.filter-bar button.active {
+  background-color: #ff6600; /* Active color */
+  color: #fff;
+  border-color: #ff6600;
+}
+
+.viewing-info {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the cards */
+  gap: 20px; /* Add spacing between the cards */
+  padding: 0 20px;
 }
 
 .card {
-  background-color: white;
-  border: 1px solid #ddd;
+  width: 300px; /* Set a fixed width for the cards */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 250px; /* Fixed width for each card */
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px; /* Optional extra margin */
 }
 
 .card img {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card h3 {
-  font-size: 18px;
-  color: #333;
+  font-size: 1.2em;
   margin: 10px 0;
 }
 
-.card p {
-  font-size: 16px;
-  color: orange;
+.card .brand {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 1px;
+}
+
+.card .visit-website {
+  display: inline-block;
   margin: 10px 0;
-  font-weight: bold;
+  color: #080808;
+  text-decoration: underline;
 }
 
-.card button {
-  background-color: transparent;
-  border: 2px solid orange;
-  color: orange;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.card button:hover {
-  background-color: orange;
-  color: white;
-}
 </style>
 <body>
 <div class="preloader">
@@ -115,7 +142,7 @@
         <ul>
           <li><a href="index.html">About us</a></li>
           <li><a href="our-story.html">Our Story</a></li>
-          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="leadership">Leadership</a></li>
           <li><a href="our-mission-our-values.html">Our Mission/Our Value</a></li>
           <li><a href="">Sustainability</a></li>
           <li><a href="">Community Involvement</a></li>
@@ -148,7 +175,7 @@
           <li><a href="">Success Stories & Case Studies</a></li>
         </ul>
       </li>
-      <li><a href="portfolio.html">PORTFOLIO</a></li>
+      <li><a href="">PORTFOLIO</a></li>
       </li>
     </ul>
   </div>
@@ -199,7 +226,7 @@
           <ul>
             <li><a href="index.html">About us</a></li>
             <li><a href="our-story.html">Our Story</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="leadership">Leadership</a></li>
             <li><a href="our-mission-our-values.html">Our Mission/Our Value</a></li>
             <li><a href="">Sustainability</a></li>
             <li><a href="">Community Involvement</a></li>
@@ -232,7 +259,7 @@
             <li><a href="">Success Stories & Case Studies</a></li>
           </ul>
         </li>
-        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="">PORTFOLIO</a></li>
         </li>
       </ul>
     </div>
@@ -301,55 +328,186 @@
 <!-- end page-header -->
 <section class="intro">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="floating-box">
-        <ul>
-          <li><a href="index.html">About Us</a></li>
-          <li><a href="our-story.html">Our Story</a></li>
-          <li class="active"><a href="leadership.html">Leadership</a></li>
-          <li><a href="our-mission-our-values.html">Our Mission/Our Values</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Community Involvement</a></li>
-        </ul>
+    <section class="portfolio">
+      <h1>Our Portfolio</h1>
+      <div class="filter-bar">
+        <button data-filter="all">All</button>
+        <button data-filter="choice">Choice</button>
+        <button data-filter="wyndham">Wyndham</button>
+        <button data-filter="hilton">Hilton</button>
+        <button data-filter="marriott">Marriott</button>
+        <button data-filter="ihg">IHG</button>
+        <button data-filter="best-western">Best Western</button>
+        <button data-filter="independent">Independent</button>
+        <button data-filter="fine-hospitality">Fine Hospitality</button>
       </div>
-      <!-- end col-6 -->
-      <div class="col-lg-61 wow fadeInUp">
-        <div class="team-container">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Nish Kharod">
-            <h3>NISH KHAROD</h3>
-            <p>VICE PRESIDENT</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Ken Pansuria">
-            <h3>KEN PANSURIA</h3>
-            <p>PRESIDENT</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
-            <h3>YASH PATEL</h3>
-            <p>DIRECTOR OF SALES & REVENUE</p>
-            <button>Read More</button>
-          </div>
+      <p class="viewing-info">Viewing: <span id="viewing-count">27</span> of 27</p>
+      <div class="portfolio-grid">
+        <div class="card" data-category="wyndham budget">
+          <img src="images/plan01.jpg" alt="Hawthorne Suites">
+          <h3>Hawthorne Suites, Tempe, AZ</h3>
+          <p class="brand">Wyndham</p>
+          <a href="#" class="visit-website">Visit Website</a>
         </div>
-        <!-- end content-box --> 
+        <div class="card" data-category="choice wyndham family">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Ontario">
+          <h3>Comfort Inn & Suites, Ontario, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice luxury">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Oceanside">
+          <h3>Comfort Inn & Suites, Oceanside, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton family">
+          <img src="images/plan01.jpg" alt="Hampton Inn Burbank">
+          <h3>Hampton Inn Burbank, Burbank, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton budget">
+          <img src="images/plan01.jpg" alt="Hampton Inn Norco">
+          <h3>Hampton Inn by Hilton, Norco, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton luxury">
+          <img src="images/plan01.jpg" alt="Home 2 Suites Azusa">
+          <h3>Home 2 Suites by Hilton, Azusa, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="wyndham budget">
+          <img src="images/plan01.jpg" alt="Hawthorne Suites">
+          <h3>Hawthorne Suites, Tempe, AZ</h3>
+          <p class="brand">Wyndham</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice wyndham family">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Ontario">
+          <h3>Comfort Inn & Suites, Ontario, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice luxury">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Oceanside">
+          <h3>Comfort Inn & Suites, Oceanside, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton family">
+          <img src="images/plan01.jpg" alt="Hampton Inn Burbank">
+          <h3>Hampton Inn Burbank, Burbank, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton budget">
+          <img src="images/plan01.jpg" alt="Hampton Inn Norco">
+          <h3>Hampton Inn by Hilton, Norco, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton luxury">
+          <img src="images/plan01.jpg" alt="Home 2 Suites Azusa">
+          <h3>Home 2 Suites by Hilton, Azusa, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="wyndham budget">
+          <img src="images/plan01.jpg" alt="Hawthorne Suites">
+          <h3>Hawthorne Suites, Tempe, AZ</h3>
+          <p class="brand">Wyndham</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice wyndham family">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Ontario">
+          <h3>Comfort Inn & Suites, Ontario, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice luxury">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Oceanside">
+          <h3>Comfort Inn & Suites, Oceanside, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton family">
+          <img src="images/plan01.jpg" alt="Hampton Inn Burbank">
+          <h3>Hampton Inn Burbank, Burbank, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton budget">
+          <img src="images/plan01.jpg" alt="Hampton Inn Norco">
+          <h3>Hampton Inn by Hilton, Norco, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton luxury">
+          <img src="images/plan01.jpg" alt="Home 2 Suites Azusa">
+          <h3>Home 2 Suites by Hilton, Azusa, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="wyndham budget">
+          <img src="images/plan01.jpg" alt="Hawthorne Suites">
+          <h3>Hawthorne Suites, Tempe, AZ</h3>
+          <p class="brand">Wyndham</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice wyndham family">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Ontario">
+          <h3>Comfort Inn & Suites, Ontario, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice luxury">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Oceanside">
+          <h3>Comfort Inn & Suites, Oceanside, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton family">
+          <img src="images/plan01.jpg" alt="Hampton Inn Burbank">
+          <h3>Hampton Inn Burbank, Burbank, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton budget">
+          <img src="images/plan01.jpg" alt="Hampton Inn Norco">
+          <h3>Hampton Inn by Hilton, Norco, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="hilton luxury">
+          <img src="images/plan01.jpg" alt="Home 2 Suites Azusa">
+          <h3>Home 2 Suites by Hilton, Azusa, CA</h3>
+          <p class="brand">Hilton</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="wyndham budget">
+          <img src="images/plan01.jpg" alt="Hawthorne Suites">
+          <h3>Hawthorne Suites, Tempe, AZ</h3>
+          <p class="brand">Wyndham</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice wyndham family">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Ontario">
+          <h3>Comfort Inn & Suites, Ontario, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
+        <div class="card" data-category="choice luxury">
+          <img src="images/plan01.jpg" alt="Comfort Inn & Suites Oceanside">
+          <h3>Comfort Inn & Suites, Oceanside, CA</h3>
+          <p class="brand">Choice</p>
+          <a href="#" class="visit-website">Visit Website</a>
+        </div>
       </div>
-      <!-- edn col-6 --> 
-    </div>
+      
+    </section>
     <!-- end row --> 
   </div>
   <!-- end container --> 
@@ -366,7 +524,7 @@
       <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.10s">
         <ul class="footer-menu">
           <li><a href="#">Contact us</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#">Portfolio</a></li>
           <li><a href="#">Accessibility</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
@@ -419,5 +577,72 @@
 <script src="js/jquery.stellar.js"></script> 
 <script src="js/isotope.min.js"></script> 
 <script src="js/scripts.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-bar button");
+  const cards = document.querySelectorAll(".portfolio-grid .card");
+  const viewingCount = document.getElementById("viewing-count");
+
+  const activeFilters = new Set(); // Store active filters
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      if (filter === "all") {
+        // If "All" is clicked, clear all other filters and activate "All"
+        activeFilters.clear();
+        activeFilters.add("all");
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+      } else {
+        // If another filter is clicked, deactivate "All" and toggle the selected filter
+        if (activeFilters.has(filter)) {
+          activeFilters.delete(filter); // Remove filter if already active
+          button.classList.remove("active");
+        } else {
+          activeFilters.add(filter); // Add filter to the active list
+          button.classList.add("active");
+        }
+
+        // Ensure "All" is deactivated when other filters are active
+        const allButton = document.querySelector("[data-filter='all']");
+        if (activeFilters.size > 0 && activeFilters.has("all")) {
+          activeFilters.delete("all");
+          allButton.classList.remove("active");
+        }
+      }
+
+      // If no filters are active, activate "All" by default
+      if (activeFilters.size === 0) {
+        const allButton = document.querySelector("[data-filter='all']");
+        activeFilters.add("all");
+        allButton.classList.add("active");
+      }
+
+      // Filter the cards
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const categories = card.getAttribute("data-category").split(" ");
+        // Show card only if it matches all active filters
+        if (
+          activeFilters.has("all") || // If "All" is active, show all cards
+          Array.from(activeFilters).every((filter) => categories.includes(filter))
+        ) {
+          card.style.display = "block";
+          visibleCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      // Update the viewing count
+      viewingCount.textContent = visibleCount;
+    });
+  });
+});
+
+</script>
 </body>
 </html>
