@@ -42,6 +42,63 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+  .team-container {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping to the next line */
+  gap: 20px; /* Adds spacing between cards */
+  padding: 40px;
+  justify-content: left; /* Centers the cards */
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px; /* Fixed width for each card */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px; /* Optional extra margin */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 16px;
+  color: orange;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card button {
+  background-color: transparent;
+  border: 2px solid orange;
+  color: orange;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: orange;
+  color: white;
+}
+</style>
 <body>
 <div class="preloader">
   <div class="layer"></div>
@@ -58,7 +115,7 @@
         <ul>
           <li><a href="index.html">About us</a></li>
           <li><a href="our-story.html">Our Story</a></li>
-          <li><a href="leadership">Leadership</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
           <li><a href="">Our Mission/Our Value</a></li>
           <li><a href="">Sustainability</a></li>
           <li><a href="">Community Involvement</a></li>
@@ -142,7 +199,7 @@
           <ul>
             <li><a href="index.html">About us</a></li>
             <li><a href="our-story.html">Our Story</a></li>
-            <li><a href="leadership">Leadership</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
             <li><a href="">Our Mission/Our Value</a></li>
             <li><a href="">Sustainability</a></li>
             <li><a href="">Community Involvement</a></li>
@@ -249,7 +306,7 @@
         <ul>
           <li><a href="index.html">About Us</a></li>
           <li class="active"><a href="our-story.html">Our Story</a></li>
-          <li><a href="leadership">Leadership</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
           <li><a href="#">Our Mission/Our Values</a></li>
           <li><a href="#">Sustainability</a></li>
           <li><a href="#">Community Involvement</a></li>
@@ -257,31 +314,38 @@
       </div>
       <!-- end col-6 -->
       <div class="col-lg-61 wow fadeInUp">
-        <div class="content-box">
-          <h4>Fine Hospitality's Story</h4>
-          <p>Unlike countless other hotel management and investment firms, Fine Hospitality’s journey stems from 
-            humble beginnings. Through positive relations with hotel owners, investors, a vigorous team, and an 
-            irrefutable knowledge of hospitality, we have become a respected leader within the hotel industry.<br><br>
-            From the start, our founder Ken Pansuria adopted the entrepreneurial spirit at an early age, working day 
-            and night in search of success.  Naturally born business savvy his calling was certain when he acquired 
-            his first 59 room Holiday Inn Express in Las Vegas, Nevada. He took a giant leap of faith in hospitality 
-            and being on the path of progress, he established Fine Hospitality Group in 2003.<br><br>
-            It was perfect timing when Ken partnered with Nish Kharod. Nish’s experience grew from working hotel 
-            line-level jobs from the front desk to night auditor, to General Manager, and later overseeing multiple 
-            hotels. His operational excellence helped drive the growth of Fine Hospitality from three hotels to six 
-            hotels within the first year. Nish’s tactics were relentless by pursuing efficiencies, optimizing resources, 
-            and both recruiting and maintaining of the best-in-class talent.<br><br>            
-            The fusion between Ken and Nish was proven to be true and contributed to Fine Hospitality’s rapid growth and 
-            continued success. Fine Hospitality not only persevered through the global economic decline of 2008, but to 
-            the contrary substantially grew 200% since. Currently, we operate over 35 premium-branded select-service hotels 
-            across 5 states, 5 in the development pipeline, employing over 600 employees and simultaneously developing a 
-            handful of new properties. Our management oversees a $300 million dollar portfolio and supervise over $75 
-            million gross annual revenue per year and rising.<br><br>            
-            Fine Hospitality’s corporate office houses experienced, genuine, and hand-picked talent with over 200+ years 
-            of hospitality and management experience amongst them. This team strives to do more than stand out in the industry, 
-            Fine Hospitality seamlessly creates value, confidence and a uniquely cultivating experience for their guests, 
-            associates, and investors.  </p>
-          <!-- <a href="#"> <img src="images/icon-m2.png" alt="Image">See our projects</a> </div> -->
+        <div class="team-container">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Nish Kharod">
+            <h3>NISH KHAROD</h3>
+            <p>VICE PRESIDENT</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Ken Pansuria">
+            <h3>KEN PANSURIA</h3>
+            <p>PRESIDENT</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
+            <h3>YASH PATEL</h3>
+            <p>DIRECTOR OF SALES & REVENUE</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
+            <h3>YASH PATEL</h3>
+            <p>DIRECTOR OF SALES & REVENUE</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Yash Patel">
+            <h3>YASH PATEL</h3>
+            <p>DIRECTOR OF SALES & REVENUE</p>
+            <button>Read More</button>
+          </div>
+        </div>
         <!-- end content-box --> 
       </div>
       <!-- edn col-6 --> 
