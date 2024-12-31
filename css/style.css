@@ -851,6 +851,14 @@ button[type=submit] {
 .navbar .container .menu ul li ul li a:hover {
   border-color: transparent;
 }
+.navbar .container .menu ul li p {
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 25px 0;
+  font-size: 18px;
+  border-top: 1px solid transparent;
+}
 .navbar .container .menu ul li a {
   color: #fff;
   display: inline-block;
