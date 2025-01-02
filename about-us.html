@@ -17,8 +17,10 @@
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
-
 </head>
+<style>
+
+</style>
 <body>
   <div class="preloader">
     <div class="layer"></div>
@@ -186,6 +188,63 @@
   </div>
 </header>
 
+<section class="about-sections">
+  <h3><span>About </span>Us</h3>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 carousel">
+        <div class="carousel-images">
+            <div class="carousel-image">
+                <div class="spc">
+                    <img src="images/b4.jpg" alt="Crown Plaza">
+                    <div class="carousel-captions">Crown Plaza, Grand Rapids, MI</div>
+                </div>
+            </div>
+            <div class="carousel-image">
+              <div class="spc">
+                    <img src="images/b4.jpg" alt="Marriott Hotel">
+                    <div class="carousel-captions">Marriott, San Francisco, CA</div>
+                </div>
+            </div>
+            <div class="carousel-image">
+              <div class="spc">
+                    <img src="images/b4.jpg" alt="Sheraton Hotel">
+                    <div class="carousel-captions">Sheraton, Chicago, IL</div>
+                </div>
+            </div>
+            <div class="carousel-image">
+              <div class="spc">
+                    <img src="images/b4.jpg" alt="Four Seasons">
+                    <div class="carousel-captions">Four Seasons, Miami, FL</div>
+                </div>
+            </div>
+            <div class="carousel-image">
+              <div class="spc">
+                    <img src="images/b4.jpg" alt="Westin Hotel">
+                    <div class="carousel-captions">Westin, Seattle, WA</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp">
+        <div class="content-box">
+          <p style="text-align: justify;">BLUMERQ Investments  is an emerging leader in hotel investment and management, 
+            with 16 hotels, 2 in the development pipeline, and over 3,200 rooms across the United States, Canada, Dubai, 
+            and Costa Rica. We specialize in creating and managing upscale, focused service hotel investments nationwide 
+            and have a proven track record of developing high-quality hotels, wineries, medical centers, and other properties 
+            that exemplify operational excellence and superior customer service.</p>
+      </div>
+    </div>
+    </div>
+</section>
+
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -231,8 +290,33 @@
 <script src="js/jquery.stellar.js"></script> 
 <script src="js/isotope.min.js"></script> 
 <script src="js/scripts.js"></script>
+<script>
+  const dots = document.querySelectorAll('.dot');
+  const carouselImages = document.querySelector('.carousel-images');
+  let currentIndex = 0;
+  const totalSlides = dots.length;
 
+  function updateCarousel(index) {
+      dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+      });
+      carouselImages.style.transform = `translateX(-${index * 100}%)`;
+  }
 
+  function autoSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel(currentIndex);
+  }
+
+  dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel(currentIndex);
+      });
+  });
+
+  setInterval(autoSlide, 3000); // Slide every 3 seconds
+</script>
 
 </body>
 </html>
