@@ -1892,14 +1892,14 @@ button[type=submit] {
 .about-sections{
   padding: 50px 0 100px;
 }
-.about-sections h3{
+.about-sections h3, .lead h3{
   text-align: center;
   padding-bottom: 25px;
   font-size: 40px;
   font-weight: 600;
   font-family: "Playfair Display", serif;
 }
-.about-sections h3 span{
+.about-sections h3 span, .lead h3 span{
   color: #9f8054;
 }
 
