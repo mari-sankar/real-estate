@@ -2462,4 +2462,23 @@ button[type=submit] {
     padding: 0 20px;
   }
 
+  .recent-gallery figure{
+    margin-top: 20px;
+  }
+
+  .tab-pane{
+    padding-left: 0;
+  }
+
+  .property-plans{
+    padding-top: 25px;
+  }
+
+  .intro {
+    padding-top: 25px;
+  }
+  .add{
+    padding: 0 25px;
+  }
+
 }
