@@ -89,6 +89,7 @@ button[type=submit] {
 }
 
 /* ACCORDION */
+
 .accordion {
   width: 100%;
   float: left;
@@ -1088,8 +1089,6 @@ button[type=submit] {
   position: absolute;
   left: 5%;
   top: -5%;
-  background: url(../images/side-pattern-bg.png);
-  background-size: contain;
 }
 .intro figure .holder {
   position: relative;
@@ -1136,6 +1135,7 @@ button[type=submit] {
   font-weight: 600;
   padding: 5px 10px;
   border: 1px solid #999;
+  border-radius: 5px;
 }
 .intro .content-box a img {
   height: 46px;
@@ -1483,6 +1483,9 @@ button[type=submit] {
 .about-sections h3 span, .lead h3 span{
   color: #9f8054;
 }
+.ab-text{
+  text-align: justify;
+}
 
 .in {
     display: flex;
@@ -1519,19 +1522,12 @@ button[type=submit] {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-}
-
-.carousel-captions {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
 }
 
 .carousel-dots {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .dot {
@@ -1596,7 +1592,7 @@ button[type=submit] {
 .culture-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4CAF50;
+  color: #9f8054;
   margin-bottom: 10px;
 }
 
@@ -1605,7 +1601,152 @@ button[type=submit] {
   line-height: 1.5;
 }
 
-/* CONTACT */
+.team-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  padding: 40px;
+  justify-content: left; 
+}
+
+/* Leadership */
+
+.cards {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px; 
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cards h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cards p {
+  font-size: 16px;
+  color: #9f8054;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.cards button {
+  background-color: transparent;
+  border: 2px solid #9f8054;
+  color: #9f8054;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cards button:hover {
+  background-color: #9f8054;
+  color: white;
+}
+
+/* Portfolio */
+
+.portfolio {
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio h1 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.portfolio h1 span{
+  color: #9f8054;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-bar button {
+  background: transparent;
+  border: 1px solid #999;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-bar button:hover {
+  background-color: #dcdcdc;
+}
+
+.filter-bar button.active {
+  background-color: #9f8054;
+  color: #fff;
+  border-color: #9f8054;
+}
+
+.viewing-info {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card .brand {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 1px;
+}
+
+.card .visit-website {
+  display: inline-block;
+  margin: 10px 0;
+  color: #080808;
+  text-decoration: underline;
+}
+
 .contact {
   width: 100%;
   display: flex;
@@ -2024,8 +2165,7 @@ button[type=submit] {
   }
 
   .intro figure .holder {
-    transform: translate(0, -45px);
-    padding: 0 15%;
+    transform: none;
   }
 
   .intro figure .holder img {
@@ -2203,7 +2343,7 @@ button[type=submit] {
   }
 
   .slider .slider-container .swiper-slide .container {
-    padding-left: 15px;
+    padding-left: 25px;
     padding-right: 40px;
   }
 
@@ -2238,4 +2378,84 @@ button[type=submit] {
   .rule-card {
     padding: 15px;
   }
+
+  .culture-card {
+    padding: 0;
+  }
+  .culture-content {
+    padding: 15px;
+  }
+
+  .dis{
+    display: none;
+  }
+
+  .footer .contact-box {
+    margin-top: 30px;
+  }
+
+  .footer {
+    padding-top: 65px;
+  }
+
+  .slider {
+    height: 65vh;
+    min-height: 500px;
+  }
+
+  .filter-bar {
+    font-size: 14px;
+  }
+
+  .filter-bar button {
+    padding: 1px 5px;
+  }
+
+  .intro .pro{
+    padding: 20px 0;
+  }
+
+  .portfolio h1 {
+    margin-bottom: 30px;
+  }
+
+  .side-navigation .menu ul li {
+    padding: 10px 0;
+  }
+  
+  .side-navigation {
+    height: 25vh;
+    min-height: 400px;
+    padding: 0 75px;
+  }
+
+  .page-header{
+    padding: 110px 15px 0 15px;
+  }
+
+  .cards {
+    width: 280px;
+  }
+
+  .carousel-image .spc {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .about-sections{
+    padding-bottom: 50px;
+  }
+
+  .ab-text{
+    padding: 20px;
+  }
+
+  .intro figure {
+    background: none;
+  }
+
+  .intro figure{
+    margin-bottom: 60px;
+  }
+
 }
