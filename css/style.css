@@ -2338,6 +2338,18 @@ button[type=submit] {
     margin-left: auto;
   }
 
+  .slider .slider-container .swiper-slide .container h1{
+    margin: 25px 0;
+  }
+
+  .slider .slider-container .swiper-slide .container h2 {
+    font-size: 22px;
+  }
+
+  .slider .slider-container .swiper-slide .container p {
+    font-size: 18px;
+  }
+
   .slider .slider-container .inner-elements .container .social-media {
     display: none;
   }
@@ -2399,7 +2411,7 @@ button[type=submit] {
   }
 
   .slider {
-    height: 65vh;
+    height: 60vh;
     min-height: 500px;
   }
 
