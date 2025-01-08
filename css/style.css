@@ -2315,7 +2315,7 @@ button[type=submit] {
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .side-navigation {
-    width: 80vw;
+    width: 65vw;
   }
 
   .page-header .container h1 {
@@ -2375,7 +2375,7 @@ button[type=submit] {
   }
 
   .side-navigation .menu ul li a {
-    font-size: 5vw;
+    font-size: 18px;
   }
 
   .side-navigation .menu ul li ul li a {
@@ -2432,12 +2432,12 @@ button[type=submit] {
   }
 
   .side-navigation .menu ul li {
-    padding: 10px 0;
+    padding: 8px 0;
   }
   
   .side-navigation {
-    height: 25vh;
-    min-height: 400px;
+    height: 20vh;
+    min-height: 350px;
     padding: 0 75px;
   }
 
