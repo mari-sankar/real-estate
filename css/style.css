@@ -2315,7 +2315,7 @@ button[type=submit] {
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .side-navigation {
-    width: 65vw;
+    width: 60vw;
   }
 
   .page-header .container h1 {
