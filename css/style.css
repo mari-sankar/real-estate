@@ -1397,19 +1397,18 @@ button[type=submit] {
 }
 
 /* Leadership */
+.leadership{
+  max-height: 330px;
+}
 
 .leadership-section {
   position: relative;
-  top: -100px;
+  top: -200px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-}
-
-.leadership-section-section.plus{
-  top: -200px;
 }
 
 .team-container {
@@ -2136,8 +2135,8 @@ button[type=submit] {
 
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
-  .side-navigation {
-    width: 60vw;
+  .row.align-items-center {
+    flex-direction: column;
   }
 
   .page-header .container h1 {
@@ -2192,6 +2191,13 @@ button[type=submit] {
     height: 450px;
   }
 
+  .side-navigation {
+    width: 65vw;
+    height: 20vh;
+    min-height: 350px;
+    padding: 0 75px;
+  }
+
   .side-navigation .menu ul li a {
     font-size: 18px;
   }
@@ -2200,9 +2206,8 @@ button[type=submit] {
     font-size: 4vw;
   }
 
-  .footer .col-12 .creation {
-    float: left;
-    margin-top: 5px;
+  .side-navigation .menu ul li {
+    padding: 8px 0;
   }
 
   .rule-card {
@@ -2216,8 +2221,22 @@ button[type=submit] {
     padding: 15px;
   }
 
+  .carousel,
+  .content-box {
+    max-width: 100%;
+  }
+
+  .culture-section {
+    top: -90px;
+  }
+
   .dis{
     display: none;
+  }
+
+  .footer .col-12 .creation {
+    float: left;
+    margin-top: 5px;
   }
 
   .footer .contact-box {
@@ -2231,6 +2250,11 @@ button[type=submit] {
   .slider {
     height: 60vh;
     min-height: 500px;
+  }
+
+  .slider.extra{
+    height: 0;
+    min-height: 90px;
   }
 
   .filter-bar {
@@ -2247,16 +2271,6 @@ button[type=submit] {
 
   .portfolio h1 {
     margin-bottom: 30px;
-  }
-
-  .side-navigation .menu ul li {
-    padding: 8px 0;
-  }
-  
-  .side-navigation {
-    height: 20vh;
-    min-height: 350px;
-    padding: 0 75px;
   }
 
   .page-header{
@@ -2311,23 +2325,7 @@ button[type=submit] {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .row.align-items-center {
-    flex-direction: column;
-  }
-
-  .carousel,
-  .content-box {
-    max-width: 100%;
-  }
-
-  .slider.extra{
-    height: 0;
-    min-height: 90px;
-  }
-
-  .culture-section {
-    top: -90px;
-  }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -2341,8 +2339,14 @@ button[type=submit] {
   .ab-text {
     font-size: 14px;
   }
-  .culture-section.plus{
-    top: -320px;
+  .page-header.plus{
+    height: 820px;
+  }
+  .leadership{
+    max-height: 1020px;
+  }
+  .leadership-section{
+    top: -610px;
   }
   .lead{
     text-align: center;
