@@ -17,16 +17,19 @@ body {
 }
 
 /* HTML ELEMENT */
+
 img {
   max-width: 100%;
 }
 
 /* CUSTOM CLASSES */
+
 .overflow {
   overflow: hidden;
 }
 
 /* LINKS */
+
 a {
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -41,6 +44,7 @@ a:hover {
 }
 
 /* CUSTOM CONTAINER */
+
 .container {
   max-width: 1280px;
 }
@@ -1492,44 +1496,17 @@ button[type=submit] {
     align-items: center;
 }
 
-/* Responsive Layout */
 .row.align-items-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  display: flex; /* Use flexbox to align items in a row */
+  justify-content: space-between; /* Space between the two columns */
+  align-items: center; /* Vertically align the items */
 }
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .row.align-items-center {
-    flex-direction: column;
-  }
-
-  .carousel,
-  .content-box {
-    max-width: 100%; /* Full width on smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .dot {
-    width: 10px;
-    height: 10px;
-  }
-
-  .ab-text {
-    font-size: 14px;
-  }
-}
-
 
 /* CULTURE */
 
 .culture-section {
   position: relative;
-  top: -130px;
+  top: -100px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -1604,16 +1581,6 @@ button[type=submit] {
   color: #333;
 }
 
-/* Responsive Layout */
-.row.align-items-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .row.align-items-center {
@@ -1624,6 +1591,10 @@ button[type=submit] {
   .content-box {
     max-width: 100%; /* Full width on smaller screens */
   }
+
+  .culture-section {
+    top: -90px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1631,10 +1602,19 @@ button[type=submit] {
     width: 10px;
     height: 10px;
   }
-
+  .abt{
+    padding: 0;
+  }
   .ab-text {
     font-size: 14px;
   }
+  .culture-section.plus{
+    top: -320px;
+  }
+  .lead{
+    text-align: center;
+  }
+
 }
 
 .culture-card {
@@ -1687,7 +1667,7 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap; 
   gap: 20px;
-  justify-content: left; 
+  justify-content: center; 
 }
 
 /* Leadership */
@@ -1708,10 +1688,11 @@ button[type=submit] {
 }
 
 .cards img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+  width: 150px; /* Set the desired size */
+  height: 150px; /* Match the width to make it a square */
+  border-radius: 50%; /* Makes the image perfectly round */
   margin-bottom: 15px;
+  object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .cards h3 {
@@ -1742,6 +1723,7 @@ button[type=submit] {
   background-color: #9f8054;
   color: white;
 }
+
 
 /* Portfolio */
 
@@ -2543,10 +2525,6 @@ button[type=submit] {
     padding-bottom: 50px;
   }
 
-  .ab-text{
-    padding: 20px;
-  }
-
   .intro figure {
     background: none;
   }
@@ -2578,4 +2556,22 @@ button[type=submit] {
     padding: 0 25px;
   }
 
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .row.align-items-center {
+    flex-direction: column;
+  }
+
+  .carousel,
+  .content-box {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .slider.extra{
+    height: 0;
+    min-height: 90px;
+  }
 }
