@@ -1073,7 +1073,6 @@ button[type=submit] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
 .rule-card {
   background: #fff;
   border-radius: 10px;
@@ -1081,25 +1080,21 @@ button[type=submit] {
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .rule-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .rule-number {
   font-size: 1.5rem;
   font-weight: bold;
   color: #9f8054;
   margin-bottom: 10px;
 }
-
 .rule-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .rule-description {
   font-size: 1rem;
   line-height: 1.5;
@@ -1239,7 +1234,6 @@ button[type=submit] {
   color: #26282b;
   font-weight: 600;
 }
-
 .tab-pane{
   padding-left: 50px;
 }
@@ -1332,12 +1326,10 @@ button[type=submit] {
 }
 
 /*About Page*/
-
 .ab-text {
   text-align: justify;
   line-height: 2;
 }
-
 .carousel {
   display: flex;
   flex-direction: column;
@@ -1347,35 +1339,29 @@ button[type=submit] {
   overflow: hidden;
   position: relative;
 }
-
 .carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
 }
-
 .carousel-image {
   flex: 0 0 100%; 
   display: none; 
   margin-top: 38px;
 }
-
 .carousel-image:first-child {
   display: block;
 }
-
 .carousel-image img {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .carousel-dots {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
-
 .carousel-dots .dot {
   width: 12px;
   height: 12px;
@@ -1385,11 +1371,9 @@ button[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .carousel-dots .dot.active {
   background-color: #ebcfa7;
 }
-
 .in {
   display: flex;
   justify-content: center;
@@ -1400,7 +1384,6 @@ button[type=submit] {
 .leadership{
   max-height: 330px;
 }
-
 .leadership-section {
   position: relative;
   top: -200px;
@@ -1410,14 +1393,12 @@ button[type=submit] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
 .team-container {
   display: flex;
   flex-wrap: wrap; 
   gap: 20px;
   justify-content: center; 
 }
-
 .cards {
   background-color: white;
   border: 1px solid #ddd;
@@ -1428,11 +1409,9 @@ button[type=submit] {
   border-radius: 8px;
   margin: 10px; 
 }
-
 .add{
   padding: 0px;
 }
-
 .cards img {
   width: 150px;
   height: 150px;
@@ -1440,20 +1419,17 @@ button[type=submit] {
   margin-bottom: 15px;
   object-fit: cover;
 }
-
 .cards h3 {
   font-size: 18px;
   color: #333;
   margin: 10px 0;
 }
-
 .cards p {
   font-size: 16px;
   color: #9f8054;
   margin: 10px 0;
   font-weight: bold;
 }
-
 .cards button {
   background-color: transparent;
   border: 2px solid #9f8054;
@@ -1464,14 +1440,12 @@ button[type=submit] {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-
 .cards button:hover {
   background-color: #9f8054;
   color: white;
 }
 
 /* CULTURE */
-
 .culture-section {
   position: relative;
   top: -100px;
@@ -1481,7 +1455,6 @@ button[type=submit] {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
 .culture-card {
   background: #fff;
   border-radius: 10px;
@@ -1490,30 +1463,25 @@ button[type=submit] {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
-
 .culture-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
-
 .culture-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
   animation: fadeIn 1.5s;
 }
-
 .culture-content {
   padding: 20px;
 }
-
 .culture-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: #9f8054;
   margin-bottom: 10px;
 }
-
 .culture-description {
   font-size: 1rem;
   line-height: 1.5;
@@ -1527,23 +1495,19 @@ button[type=submit] {
 
 
 /* Portfolio */
-
 .portfolio {
   text-align: center;
   padding: 0 20px 20px;
 }
-
 .portfolio h1 {
   font-size: 44px;
   margin-bottom: 30px;
   font-weight: 600;
   font-family: "Playfair Display", serif;
 }
-
 .portfolio h1 span{
   color: #9f8054;
 }
-
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -1551,7 +1515,6 @@ button[type=submit] {
   gap: 10px;
   margin-bottom: 20px;
 }
-
 .filter-bar button {
   background: transparent;
   border: 1px solid #999;
@@ -1560,22 +1523,18 @@ button[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .filter-bar button:hover {
   background-color: #dcdcdc;
 }
-
 .filter-bar button.active {
   background-color: #9f8054;
   color: #fff;
   border-color: #9f8054;
 }
-
 .viewing-info {
   margin-bottom: 20px;
   color: #555;
 }
-
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1583,7 +1542,6 @@ button[type=submit] {
   gap: 20px;
   padding: 0 20px;
 }
-
 .card {
   width: 300px;
   background: #fff;
@@ -1592,24 +1550,20 @@ button[type=submit] {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .card h3 {
   font-size: 20px;
   margin: 10px;
 }
-
 .card .brand {
   font-size: 0.9em;
   color: #999;
   margin-bottom: 1px;
 }
-
 .card .visit-website {
   display: inline-block;
   margin: 10px 0;
@@ -1987,23 +1941,18 @@ button[type=submit] {
   .intro figure .holder {
     transform: translate(65px, -65px);
   }
-
   .intro figure .holder img {
     width: 450px;
   }
-
   .property-calculator figure .holder {
     transform: translate(65px, -65px);
   }
-
   .property-calculator figure .holder img {
     width: 450px;
   }
-
   .footer-bar .inner p {
     font-size: 15px;
   }
-
   .footer-bar .inner p br {
     display: none;
   }
@@ -2014,121 +1963,87 @@ button[type=submit] {
   .side-navigation .side-content {
     display: none;
   }
-
   .side-navigation .menu {
     display: block;
   }
-
   .navbar .container .menu {
     display: none;
   }
-
   .page-header .container h1 {
     font-size: 8vw;
   }
-
   .intro figure {
     width: 100%;
     margin-bottom: 80px;
   }
-
   .intro figure .pattern-bg {
     width: 100%;
     left: 0;
   }
-
   .intro figure .holder {
     transform: none;
   }
-
   .intro figure .holder img {
     width: 100%;
   }
-
   .intro .content-box {
     padding-left: 0;
   }
-
   .recent-gallery {
     padding: 80px 0;
   }
-
   .recent-gallery h3 {
     padding-right: 0;
   }
-
   .recent-gallery .col-md-4 {
     margin-top: 0 !important;
   }
-
   .recent-gallery figure {
     margin-top: 80px;
   }
-
   .property-plans {
     padding-bottom: 80px;
   }
-
   .property-plans .nav-pills {
     margin-top: 40px;
   }
-
-  .recent-posts {
-    padding: 80px 0;
-  }
-
-  .recent-posts .post-box {
-    margin: 25px 0;
-  }
-
   .contact {
     padding: 40px 0;
   }
-
   .contact address p a {
     display: block;
   }
-
   .contact .contact-form {
     padding-left: 0;
     margin-top: 50px;
   }
-
   .footer-bar .inner {
     padding: 30px;
   }
-
   .footer-bar .inner .col-lg-4 {
     margin: 20px 0;
   }
-
   .footer-bar .inner figure {
     width: 70px;
     margin-right: 0;
   }
-
   .footer-bar .inner figure img {
     height: 50px;
   }
-
   .footer {
     padding-top: 150px;
   }
-
   .footer .select-box {
     margin-bottom: 80px;
   }
-
   .footer .footer-menu {
     padding: 0;
   }
-
   .footer .contact-box {
     float: left;
     text-align: left;
     margin-top: 80px;
   }
-
   .footer .contact-box ul {
     float: left;
   }
@@ -2140,202 +2055,159 @@ button[type=submit] {
   .row.align-items-center {
     flex-direction: column;
   }
-
   .page-header .container h1 {
     font-size: 10vw;
   }
-
   .page-header .container .breadcrumb {
     width: calc(100% - 30px);
   }
-
   .navbar .container .upper-side .phone-email {
     display: none;
   }
-
   .navbar .container .upper-side .language {
     display: none;
   }
-
   .navbar .container .upper-side .hamburger {
     margin-left: auto;
   }
-
   .slider .slider-container .swiper-slide .container h1{
     margin: 25px 0;
   }
-
   .slider .slider-container .swiper-slide .container h2 {
     font-size: 22px;
   }
-
   .slider .slider-container .swiper-slide .container p {
     font-size: 18px;
   }
-
   .slider .slider-container .inner-elements .container .social-media {
     display: none;
   }
-
   .slider .slider-container .swiper-slide .container {
     padding-left: 25px;
     padding-right: 40px;
   }
-
   .slider .slider-container .swiper-slide .container figure {
     width: 100%;
     margin-left: 0;
     margin-top: 30px;
   }
-
   .contact .map .holder iframe {
     width: 100%;
     height: 450px;
   }
-
   .side-navigation {
     width: 65vw;
     height: 20vh;
     min-height: 350px;
     padding: 0 75px;
   }
-
   .side-navigation .menu ul li a {
     font-size: 18px;
   }
-
   .side-navigation .menu ul li ul li a {
     font-size: 4vw;
   }
-
   .side-navigation .menu ul li {
     padding: 8px 0;
   }
-
   .rule-card {
     padding: 15px;
   }
-
   .culture-card {
     padding: 0;
   }
   .culture-content {
     padding: 15px;
   }
-
-  .carousel,
-  .content-box {
+  .carousel, .content-box {
     max-width: 100%;
   }
-
   .culture-section {
     top: -90px;
   }
-
-  .dis{
+  .dis {
     display: none;
   }
-
   .footer .col-12 .creation {
     float: left;
     margin-top: 5px;
   }
-
   .footer .contact-box {
     margin-top: 30px;
   }
-
   .footer {
     padding-top: 65px;
   }
-
   .slider {
     height: 60vh;
     min-height: 500px;
   }
-
   .slider.extra{
     height: 0;
     min-height: 90px;
   }
-
   .filter-bar {
     font-size: 14px;
   }
-
   .filter-bar button {
     padding: 1px 5px;
   }
-
   .intro .pro{
     padding: 20px 0;
   }
-
   .portfolio h1 {
     margin-bottom: 30px;
   }
-
   .page-header{
     padding: 110px 15px 0 15px;
   }
-
   .cards {
     width: 280px;
   }
-
   .carousel-image .spc {
     margin-right: 20px;
     margin-left: 20px;
   }
-
   .about-sections{
     padding-bottom: 50px;
   }
-
   .intro figure {
     background: none;
   }
-
   .intro figure{
     margin-bottom: 60px;
   }
-
   .property-plans .container {
     padding: 0 20px;
   }
-
   .recent-gallery figure{
     margin-top: 20px;
   }
-
   .tab-pane{
     padding-left: 0;
   }
-
-  .property-plans{
+  .property-plans {
     padding-top: 25px;
   }
-
   .intro {
     padding-top: 25px;
   }
-  .add{
+  .add {
     padding: 0 25px;
   }
-
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  
 }
 
 @media screen and (max-width: 480px) {
+  .page-header .container h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
   .dot {
     width: 10px;
     height: 10px;
   }
-  .abt{
+  .abt {
     padding: 0;
   }
   .ab-text {
@@ -2344,14 +2216,13 @@ button[type=submit] {
   .page-header.plus{
     height: 820px;
   }
-  .leadership{
+  .leadership {
     max-height: 950px;
   }
-  .leadership-section{
+  .leadership-section {
     top: -660px;
   }
-  .lead{
+  .lead {
     text-align: center;
   }
-
 }
